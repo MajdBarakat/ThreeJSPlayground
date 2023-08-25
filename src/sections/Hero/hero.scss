@@ -1,0 +1,14 @@
+.hero-container {
+  background-color: black;
+
+  .tile {
+    width: 40vh;
+    height: 25vh;
+    line-height: 1;
+
+    h1 {
+      font-size: 200px;
+      width: 100%;
+    }
+  }
+}

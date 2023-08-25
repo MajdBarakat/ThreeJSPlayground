@@ -4,42 +4,43 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ACESFilmicToneMapping } from 'three'
 import { Scene } from './Scene'
-import './styles/main.scss'
+import './main.scss'
+import Hero from './sections/Hero/Hero'
 
 function Main() {
   return (
-    <div className='main'>
-      <Leva
-        collapsed={false}
-        oneLineLabels={false}
-        flat={true}
-        theme={{
-          sizes: {
-            titleBarHeight: '28px',
-          },
-          fontSizes: {
-            root: '10px',
-          },
-        }}
-      />
-      <Canvas
-        dpr={[1, 2]}
-        gl={{
-          antialias: true,
-          toneMapping: ACESFilmicToneMapping,
-        }}
-        camera={{
-          fov: 55,
-          near: 0.1,
-          far: 200,
-          position: [3, 2, 9],
-        }}
-        shadows
-      >
-        <Scene />
-      </Canvas>
-    </div>
-    // <div></div>
+    // <div className='main'>
+    //   <Leva
+    //     collapsed={false}
+    //     oneLineLabels={false}
+    //     flat={true}
+    //     theme={{
+    //       sizes: {
+    //         titleBarHeight: '28px',
+    //       },
+    //       fontSizes: {
+    //         root: '10px',
+    //       },
+    //     }}
+    //   />
+    //   <Canvas
+    //     dpr={[1, 2]}
+    //     gl={{
+    //       antialias: true,
+    //       toneMapping: ACESFilmicToneMapping,
+    //     }}
+    //     camera={{
+    //       fov: 55,
+    //       near: 0.1,
+    //       far: 200,
+    //       position: [3, 2, 9],
+    //     }}
+    //     shadows
+    //   >
+    //     <Scene />
+    //   </Canvas>
+    // </div>
+    <Hero />
   )
 }
 
