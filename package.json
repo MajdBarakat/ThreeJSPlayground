@@ -18,7 +18,7 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",
     "sass": "^1.66.1",
-    "three": "^0.155.0"
+    "three": "^0.156.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.17",
